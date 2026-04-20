@@ -3,7 +3,7 @@ from typing import Union, Optional
 import numpy as np
 from matplotlib.axes import Axes # type: ignore
 
-from .gpdf_vec import GassianProcessDistanceField as GPDF # type: ignore
+from .model import GaussianProcessDistanceField as GPDF # type: ignore
 
 
 class GPDFEnv:

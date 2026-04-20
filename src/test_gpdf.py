@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt # type: ignore
 import matplotlib.patches as patches # type: ignore
 
-from basic_boundary_function.env import GPDFEnv
+from gpdf.environment import GPDFEnv
 
 
 obstacle_list = [

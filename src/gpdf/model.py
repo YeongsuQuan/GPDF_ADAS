@@ -6,15 +6,15 @@ import jax
 import numpy as np
 from PIL import Image # type: ignore
 
-from .gpdf_w_hes import train_gpdf
-from .gpdf_w_hes import infer_gpdf_dis, infer_gpdf_hes, infer_gpdf, infer_gpdf_grad
+from .kernels import train_gpdf
+from .kernels import infer_gpdf_dis, infer_gpdf_hes, infer_gpdf, infer_gpdf_grad
 
 np.set_printoptions(threshold=sys.maxsize)
 np.set_printoptions(suppress=True)
 
 
-class GassianProcessDistanceField:
-    """Gaussian Process Distance Field"""
+class GaussianProcessDistanceField:
+    """Gaussian Process Distance Field (GPDF)"""
     def __init__(self, pc_coords:Optional[np.ndarray]=None) -> None:
         self._pc_coords = pc_coords
         if pc_coords is not None:
